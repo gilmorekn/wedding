@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset=utf-8 />
+	<title>Boone, NC</title>
+	<meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
+
+	
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.css" />
+	<link rel="stylesheet" href="https://unpkg.com/leaflet@1.0.1/dist/leaflet.css" />
+	<link href="https://fonts.googleapis.com/css?family=Noto+Sans" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Lora" rel="stylesheet"> 
+
+    <style> /*everything here is css*/ 
+		body {
+			margin: 0;
+			padding: 0;
+			background: "whitesmoke";
+			font-family: "Noto Sans", sans-serif;
+			color: #FFFFFF;
+		}
+
+		h1 {
+			position: absolute;
+			margin-top: 1;
+			top: 10px;
+			left: 60px;
+			font-size: 2em;
+			font-family: "Lora", serif;
+			letter-spacing: .04em;
+			padding: 10px 15px;
+			background: #033A58 ;
+			border: 3px solid #DB6430;
+			border-radius: 8px;
+			z-index: 800;
+		}		
+
+		h2 {
+			font-family: "Lora", serif;
+			letter-spacing: .04em;
+			
+		}
+		#section1  {
+			position: absolute;
+			bottom: 0;
+			left: 75px;
+			width: 280px;
+			margin: 20px auto;
+			padding: 0 15px;
+			background:  #033A58  ;
+			border: 3px solid #DB6430;
+			border-radius: 3px;
+			z-index: 800;
+		}
+		
+		#section3  {
+			position: absolute;
+			bottom: 0;
+			left: 910px;
+			width: 200px;
+			margin: 40px auto;
+			padding: 0 15px;
+			
+			z-index: 800;
+		}
+
+		#section4 
+		{
+			position: absolute;
+			margin-top: 60;
+			top: 20px;
+			left: 1150px;
+			width: 400px;
+			padding: 0 15px;
+
+	
+			
+			
+			z-index: 800;
+		}
+
+		#map {
+			position: absolute;
+			top: 0;
+			bottom: 0;
+			width: 100%;
+		}
+
+	
+
+		p {
+			font-size: .9em;
+			line-height: 1.5em;
+		}
+
+		a {
+			color: #AEAF34 ;
+			text-decoration: none;
+		}
+
+		a:hover {
+			text-decoration: underline;
+			color:#DB6430 
+		}
+		
+		
+	</style>
+</head>
+
+<body>
+
+
+
+	<h1> How to Fall in Love
+	</h1>
+
+	<div id='map'></div>
+
+	<section id="section1"> 
+		<h2></h2>
+		<p> Go contra dancing at <a href="https://www.townofblowingrocknc.gov/government/parks-and-recreation-and-landscaping-/photos/american-legion"> Blowing Rock Legion Hall </a>. Have a first date at <a href="https://www.facebook.com/TheLocalLion/"> Local Lion</a>. Climb at <a href="https://www.center45.com/"> Center 45</a>.
+            Play cribbage at <a href="https://www.amb.beer/"> AMB </a>. Go on a hike at <a href="https://www.virtualblueridge.com/parkway-place/green-knob-trail-2/"> Green Knob </a> and grab a beer at <a href="https://blowingrock.com/service/blowing_rock_ale_house_%26_inn/"> Blowing Rock Ale House </a>afterwards.
+            Climb at <a href="https://www.mountainproject.com/area/106817923/blowing-rock-boulders"> Blowing Rock Boulders </a> with a friend. Dog sit Fern. Go to church at <a href="https://booneumc.org/"> Boone UMC </a>. Have lots of
+            reading dates at the tree on the hill at <a href="https://www.nps.gov/blri/planyourvisit/moses-h-cone-memorial-park-mp-294.htm"> Moses Cone </a> (propose here later). Design and execute a progressive dinner
+            on King Street (<a href="https://www.hotelsone.com/boone-hotels-us/the-horton-hotel-and-rooftop-lounge.html?as=g&aid=669375795482&dsti=71964913&dstt=8&nid=1&gad_source=1&gclid=CjwKCAiA-bmsBhAGEiwAoaQNmolNx_sQK-3me05Zi-9qMpT1MtH4MHdLDACDU7-Me3u7qHDRsfLQFxoCO7sQAvD_BwE"> The Horton</a>,
+             <a href="https://cobosushi.com/"> COBO</a>, 
+             <a href="https://www.venturechocolateandwine.com/"> Venture</a>,
+              <a href="https://www.thelocalboone.com/"> The Local</a>) followed by a silent disco. Climb some more at 
+            <a href="https://carolinaclimbers.org/climbing-areas/ravenrock.html"> Raven Rock Boulders</a> with friends. Park a truck and watch the sunset at <a href="https://npplan.com/parks-by-state/north-carolina-national-parks/blue-ridge-parkway-park-at-a-glance/blue-ridge-parkway-scenic-overlooks/blue-ridge-parkway-grandview-overlook-mp-281-4/"> Grand View Overlook</a>. Go ice skating
+            at <a href="https://appskimtn.com/"> App Ski Mountain</a> and walk around the festival of the lights at <a href="https://www.exploreboone.com/event/festival-of-lights-at-chetola-resort/23834/?gclid=CjwKCAiA-bmsBhAGEiwAoaQNmnsx7tOiNxaYuWfzmKooibrwXoq0jnxYrLTACQvk_H4kyuFlc2HskhoC2RYQAvD_BwE"> Chetola</a>.
+        </p>  
+	
+		</section>
+
+
+		<section id="section3">
+			<img src= "cel.png" width = 400/>
+		</section>
+
+		<section id="section4">
+			<button>
+				<a href="https://raysweather.com/Forecast/Boone"> Sledding Forecast!</a>
+			</button>
+			
+		</section>
+		
+
+
+	
+    <script src="http://code.jquery.com/jquery-3.1.1.min.js"></script>
+	<script src="https://unpkg.com/leaflet@1.0.1/dist/leaflet.js"></script>
+    <script src="data/myroute.js"></script> <!--this line loads the route.js file-->
+
+	<script>
+		
+        //options to be used when creating the map
+		var options = {
+			center: [36.179219985406654, -81.6916294809209],
+			zoom: 12.4
+		}
+
+//creation of the Leaflet map
+		var map = L.map('map', options);
+
+//request to load basemap 
+//old//L.tileLayer('https://{s}.tile.openstreetmap.fr/hot/{z}/{x}/{y}.png', {
+                //maxZoom: 19,
+                //attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors, Tiles style by <a href="https://www.hotosm.org/" target="_blank">Humanitarian OpenStreetMap Team</a> hosted by <a href="https://openstreetmap.fr/" target="_blank">OpenStreetMap France</a>'
+            //}).addTo(map); 
+
+			//var OpenTopoMap = L.tileLayer('https://{s}.tile.opentopomap.org/{z}/{x}/{y}.png', {
+			//maxZoom: 17,
+			//attribution: 'Map data: &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors, <a href="http://viewfinderpanoramas.org">SRTM</a> | Map style: &copy; <a href="https://opentopomap.org">OpenTopoMap</a> (<a href="https://creativecommons.org/licenses/by-sa/3.0/">CC-BY-SA</a>)'
+			//	}).addTo(map); 
+
+        //custom basemap CEL
+       //L.mapbox.accessToken = 'pk.eyJ1IjoiZ2lsbW9yZWtuIiwiYSI6ImNsbzRrcGltbTAyaXYycm84Ymx3M3V2ZDMifQ.A9CmT6xraGE2k-zAyryq9g'; 
+	   //var map = L.mapbox.map('map') .setView([36.21440978296358, -81.67818643883422], 14) 
+	   //.addLayer(L.mapbox.styleLayer('mapbox://styles/gilmorekn/clpimh8be00c001p7063297fv'))
+
+	   //back up basemap 
+	  L.tileLayer('http://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}.png')
+	  //var Stadia_AlidadeSmooth = L.tileLayer('https://tiles.stadiamaps.com/tiles/alidade_smooth/{z}/{x}/{y}{r}.{ext}', {
+	//minZoom: 0,
+	//maxZoom: 20,
+	//attribution: '&copy; <a href="https://www.stadiamaps.com/" target="_blank">Stadia Maps</a> &copy; <a href="https://openmaptiles.org/" target="_blank">OpenMapTiles</a> &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
+	//ext: 'png'
+//})
+	   .addTo(map);
+
+
+var myRoute = L.geoJson(data, {
+	filter: function(feature) {
+		if(feature.geometry.type == 'LineString') {
+			return feature; 
+		}
+	},
+	style: function(feature) {
+		return {
+			color: '#000000', 
+			weight: 6, 
+			opacity: 5,
+			dashArray: '1, 1'
+		}
+	}
+}) .addTo(map);
+
+var myStops = L.geoJson(data, {
+	filter: function(feature) {
+		if(feature.geometry.type == 'Point'){
+			return feature; 
+		}
+	}, 
+	onEachFeature: function(feature, layer) {
+		layer.bindTooltip(feature.properties['Name'] + 
+		"<br>" + feature.properties['Comment']);
+		//"<br>" + feature.properties['Website']); 
+		//"<br>" + "<a href= '" + feature.properties.Website + "'>" </a>); 
+	}
+}) .addTo(map);
+
+
+
+map.fitBounds(myRoute.getBounds());
+
+
+
+
+</script>
+
+</body>
+
+
+</html>
